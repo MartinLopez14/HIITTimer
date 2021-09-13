@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HIIT Timer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="yourWorkouts">Tus Entrenamientos</string>
+    <string name="title">Título*</string>
+    <string name="description">Descripción</string>
+    <string name="next">Siguiente</string>
+    <string name="name">Nombre*</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="delete">Eliminar</string>
+    <string name="add">Agregar</string>
+    <string name="save">Ahorrar</string>
+    <string name="addExercises">Agrega ejercicios a tu entrenamiento</string>
+    <string name="nextUp">Siguiente</string>
+    <string name="play">Jugar</string>
+    <string name="pause">Pausa</string>
+    <string name="stop">Detener</string>
+    <string name="start">Comienzo</string>
+    <string name="share">Cuota</string>
+
+
+</resources>

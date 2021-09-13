@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.addExerciseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editExerciseName"
+            android:layout_width="363dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editSeconds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editMinutes"
+            android:layout_width="182dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="@string/minutes"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/addButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editExerciseName"
+            app:layout_constraintVertical_bias="0.526" />
+
+        <EditText
+            android:id="@+id/editSeconds"
+            android:layout_width="179dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/seconds"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/addButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editExerciseName" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="139dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/add"
+            app:layout_constraintBottom_toTopOf="@+id/exercisesRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editSeconds" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exercisesRecycler"
+            android:layout_width="372dp"
+            android:layout_height="397dp"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/saveButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="212dp"
+            android:layout_height="59dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.882"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exercisesRecycler"
+            app:layout_constraintVertical_bias="0.771" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="296dp"
+            android:layout_height="38dp"
+            android:text="@string/addExercises"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
